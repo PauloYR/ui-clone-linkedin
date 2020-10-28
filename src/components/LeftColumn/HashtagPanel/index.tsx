@@ -13,7 +13,7 @@ const HashtagPanel: React.FC = () => {
         <span className="title">Hashtags seguidas</span>
 
         {tags.map((item) => (
-          <span className="tag">
+          <span key={item} className="tag">
             <HashtagIcon />
             {item}
           </span>
